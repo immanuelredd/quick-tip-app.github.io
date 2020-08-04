@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>Quick Tip</title>
+</head>
+
+<body>
+    <main id="wrapper">
+        <h1>Quick Tip</h1>
+
+        <section>
+            <div class="bills">
+                <label for="yourBill">Bill: </label>
+                <input type="number" name="" id="yourBill" placeholder="Your Bill">
+            </div>
+
+            <div>
+                <div class="space-between">
+                    <label for="tipInput">Select Tip</label>
+                    <span class="" id="tipPercent"></span>
+                </div>
+                <input type="range" name="" id="tipInput" value="0" class="range">
+            </div>
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <div class="space-between">
+                <span class="total">Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+        </section>
+        <section>
+            <div class="space-between">
+                <label for="splitInput">Split</label>
+                <span id="splitValue">1 person</span>
+            </div>
+            <input type="range" name="" id="splitInput" min="1" max="12" value="1" class="range">
+
+            <div class="space-between">
+                <span>Bill Each</span>
+                <span id="billEach"></span>
+            </div>
+            <div class="space-between">
+                <span>Tip Each</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+    </main>
+    <script src="assets/JS/custom.js"></script>
+</body>
+
+</html>
